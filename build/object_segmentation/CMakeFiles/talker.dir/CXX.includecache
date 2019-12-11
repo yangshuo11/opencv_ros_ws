@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ys/opencv_ros_ws/src/object_segmentation/src/talker.cpp
+/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/talker.cpp
 ros/ros.h
-/home/ys/opencv_ros_ws/src/object_segmentation/src/ros/ros.h
+/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/ros/ros.h
 std_msgs/String.h
-/home/ys/opencv_ros_ws/src/object_segmentation/src/std_msgs/String.h
+/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/std_msgs/String.h
 sstream
 -
 

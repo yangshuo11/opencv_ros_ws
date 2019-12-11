@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d2c4a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d2c4a.dir/build.make CMakeFiles/cmTC_d2c4a.dir/build
-make[1]: Entering directory '/home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d2c4a.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_d2c4a.dir/CheckSymbolExists.c.o   -c /home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_d2c4a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2c4a.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_d2c4a.dir/CheckSymbolExists.c.o  -o cmTC_d2c4a -rdynamic 
-CMakeFiles/cmTC_d2c4a.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_c93de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c93de.dir/build.make CMakeFiles/cmTC_c93de.dir/build
+make[1]: Entering directory '/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c93de.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c93de.dir/CheckSymbolExists.c.o   -c /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c93de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c93de.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c93de.dir/CheckSymbolExists.c.o  -o cmTC_c93de -rdynamic 
+CMakeFiles/cmTC_c93de.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_d2c4a.dir/build.make:97: recipe for target 'cmTC_d2c4a' failed
-make[1]: *** [cmTC_d2c4a] Error 1
-make[1]: Leaving directory '/home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_d2c4a/fast' failed
-make: *** [cmTC_d2c4a/fast] Error 2
+CMakeFiles/cmTC_c93de.dir/build.make:97: recipe for target 'cmTC_c93de' failed
+make[1]: *** [cmTC_c93de] Error 1
+make[1]: Leaving directory '/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c93de/fast' failed
+make: *** [cmTC_c93de/fast] Error 2
 
-File /home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0b3aa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0b3aa.dir/build.make CMakeFiles/cmTC_0b3aa.dir/build
-make[1]: Entering directory '/home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0b3aa.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0b3aa.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_0b3aa
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b3aa.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0b3aa.dir/CheckFunctionExists.c.o  -o cmTC_0b3aa -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_eb322/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb322.dir/build.make CMakeFiles/cmTC_eb322.dir/build
+make[1]: Entering directory '/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb322.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_eb322.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eb322
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb322.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_eb322.dir/CheckFunctionExists.c.o  -o cmTC_eb322 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_0b3aa.dir/build.make:97: recipe for target 'cmTC_0b3aa' failed
-make[1]: *** [cmTC_0b3aa] Error 1
-make[1]: Leaving directory '/home/ys/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_0b3aa/fast' failed
-make: *** [cmTC_0b3aa/fast] Error 2
+CMakeFiles/cmTC_eb322.dir/build.make:97: recipe for target 'cmTC_eb322' failed
+make[1]: *** [cmTC_eb322] Error 1
+make[1]: Leaving directory '/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eb322/fast' failed
+make: *** [cmTC_eb322/fast] Error 2
 
 

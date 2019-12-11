@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ys/opencv_ros_ws/src
+CMAKE_SOURCE_DIR = /home/ys/MyGitRepository/opencv_ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ys/opencv_ros_ws/build
+CMAKE_BINARY_DIR = /home/ys/MyGitRepository/opencv_ros_ws/build
 
 # Utility rule file for object_segmentation_generate_messages.
 
@@ -63,10 +63,10 @@ object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/build: 
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/build
 
 object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/clean:
-	cd /home/ys/opencv_ros_ws/build/object_segmentation && $(CMAKE_COMMAND) -P CMakeFiles/object_segmentation_generate_messages.dir/cmake_clean.cmake
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation && $(CMAKE_COMMAND) -P CMakeFiles/object_segmentation_generate_messages.dir/cmake_clean.cmake
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/clean
 
 object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/depend:
-	cd /home/ys/opencv_ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ys/opencv_ros_ws/src /home/ys/opencv_ros_ws/src/object_segmentation /home/ys/opencv_ros_ws/build /home/ys/opencv_ros_ws/build/object_segmentation /home/ys/opencv_ros_ws/build/object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ys/MyGitRepository/opencv_ros_ws/src /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation /home/ys/MyGitRepository/opencv_ros_ws/build /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/depend
 

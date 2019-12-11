@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ys/opencv_ros_ws/src
+CMAKE_SOURCE_DIR = /home/ys/MyGitRepository/opencv_ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ys/opencv_ros_ws/build
+CMAKE_BINARY_DIR = /home/ys/MyGitRepository/opencv_ros_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ys/opencv_ros_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ys/opencv_ros_ws/build/CMakeFiles /home/ys/opencv_ros_ws/build/object_segmentation/CMakeFiles/progress.marks
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/opencv_ros_ws/build/CMakeFiles 0
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/CMakeFiles/progress.marks
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/clean
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/preinstall
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/preinstall
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ys/opencv_ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ sensor_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/sensor_msgs_g
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ object_segmentation_generate_messages: object_segmentation/CMakeFiles/object_seg
 
 # fast build rule for target.
 object_segmentation_generate_messages/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/build
 .PHONY : object_segmentation_generate_messages/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ sensor_msgs_generate_messages_cpp: object_segmentation/CMakeFiles/sensor_msgs_ge
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ geometry_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/geometry_ms
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ roscpp_generate_messages_lisp: object_segmentation/CMakeFiles/roscpp_generate_me
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ roscpp_generate_messages_nodejs: object_segmentation/CMakeFiles/roscpp_generate_
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ rosgraph_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/rosgraph_ms
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -282,12 +282,12 @@ rosgraph_msgs_generate_messages_py: object_segmentation/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -297,12 +297,12 @@ roscpp_generate_messages_eus: object_segmentation/CMakeFiles/roscpp_generate_mes
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -312,12 +312,12 @@ sensor_msgs_generate_messages_eus: object_segmentation/CMakeFiles/sensor_msgs_ge
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -327,12 +327,12 @@ std_msgs_generate_messages_cpp: object_segmentation/CMakeFiles/std_msgs_generate
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ rosgraph_msgs_generate_messages_cpp: object_segmentation/CMakeFiles/rosgraph_msg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_genpy.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_genpy.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_genpy.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_genpy.dir/rule
 
 # Convenience name for target.
@@ -357,12 +357,12 @@ object_segmentation_genpy: object_segmentation/CMakeFiles/object_segmentation_ge
 
 # fast build rule for target.
 object_segmentation_genpy/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_genpy.dir/build.make object_segmentation/CMakeFiles/object_segmentation_genpy.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_genpy.dir/build.make object_segmentation/CMakeFiles/object_segmentation_genpy.dir/build
 .PHONY : object_segmentation_genpy/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -372,12 +372,12 @@ roscpp_generate_messages_cpp: object_segmentation/CMakeFiles/roscpp_generate_mes
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -387,12 +387,12 @@ geometry_msgs_generate_messages_eus: object_segmentation/CMakeFiles/geometry_msg
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -402,12 +402,12 @@ rosgraph_msgs_generate_messages_eus: object_segmentation/CMakeFiles/rosgraph_msg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -417,12 +417,12 @@ sensor_msgs_generate_messages_py: object_segmentation/CMakeFiles/sensor_msgs_gen
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -432,12 +432,12 @@ std_msgs_generate_messages_py: object_segmentation/CMakeFiles/std_msgs_generate_
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -447,12 +447,12 @@ object_segmentation_generate_messages_lisp: object_segmentation/CMakeFiles/objec
 
 # fast build rule for target.
 object_segmentation_generate_messages_lisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build
 .PHONY : object_segmentation_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -462,12 +462,12 @@ geometry_msgs_generate_messages_nodejs: object_segmentation/CMakeFiles/geometry_
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/rule
 
 # Convenience name for target.
@@ -477,12 +477,12 @@ object_segmentation_gencpp: object_segmentation/CMakeFiles/object_segmentation_g
 
 # fast build rule for target.
 object_segmentation_gencpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_gencpp.dir/build
 .PHONY : object_segmentation_gencpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -492,12 +492,12 @@ sensor_msgs_generate_messages_nodejs: object_segmentation/CMakeFiles/sensor_msgs
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/talker.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/talker.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/talker.dir/rule
 .PHONY : object_segmentation/CMakeFiles/talker.dir/rule
 
 # Convenience name for target.
@@ -507,12 +507,12 @@ talker: object_segmentation/CMakeFiles/talker.dir/rule
 
 # fast build rule for target.
 talker/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/build
 .PHONY : talker/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -522,12 +522,12 @@ std_msgs_generate_messages_nodejs: object_segmentation/CMakeFiles/std_msgs_gener
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -537,12 +537,12 @@ geometry_msgs_generate_messages_py: object_segmentation/CMakeFiles/geometry_msgs
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -552,12 +552,12 @@ std_msgs_generate_messages_eus: object_segmentation/CMakeFiles/std_msgs_generate
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/rule
 .PHONY : object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/rule
 
 # Convenience name for target.
@@ -567,12 +567,12 @@ _object_segmentation_generate_messages_check_deps_AddTwoInts: object_segmentatio
 
 # fast build rule for target.
 _object_segmentation_generate_messages_check_deps_AddTwoInts/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/build.make object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/build.make object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/build
 .PHONY : _object_segmentation_generate_messages_check_deps_AddTwoInts/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -582,12 +582,12 @@ std_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/std_msgs_generat
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -597,12 +597,12 @@ object_segmentation_gennodejs: object_segmentation/CMakeFiles/object_segmentatio
 
 # fast build rule for target.
 object_segmentation_gennodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/build.make object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/build.make object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/build
 .PHONY : object_segmentation_gennodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/rule
 .PHONY : object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/rule
 
 # Convenience name for target.
@@ -612,12 +612,12 @@ _object_segmentation_generate_messages_check_deps_Num: object_segmentation/CMake
 
 # fast build rule for target.
 _object_segmentation_generate_messages_check_deps_Num/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/build.make object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/build.make object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/build
 .PHONY : _object_segmentation_generate_messages_check_deps_Num/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -627,12 +627,12 @@ rosgraph_msgs_generate_messages_nodejs: object_segmentation/CMakeFiles/rosgraph_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -642,12 +642,12 @@ object_segmentation_generate_messages_cpp: object_segmentation/CMakeFiles/object
 
 # fast build rule for target.
 object_segmentation_generate_messages_cpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build
 .PHONY : object_segmentation_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -657,12 +657,12 @@ geometry_msgs_generate_messages_cpp: object_segmentation/CMakeFiles/geometry_msg
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -672,12 +672,12 @@ object_segmentation_generate_messages_eus: object_segmentation/CMakeFiles/object
 
 # fast build rule for target.
 object_segmentation_generate_messages_eus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build
 .PHONY : object_segmentation_generate_messages_eus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_geneus.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_geneus.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_geneus.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_geneus.dir/rule
 
 # Convenience name for target.
@@ -687,12 +687,12 @@ object_segmentation_geneus: object_segmentation/CMakeFiles/object_segmentation_g
 
 # fast build rule for target.
 object_segmentation_geneus/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_geneus.dir/build.make object_segmentation/CMakeFiles/object_segmentation_geneus.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_geneus.dir/build.make object_segmentation/CMakeFiles/object_segmentation_geneus.dir/build
 .PHONY : object_segmentation_geneus/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -702,12 +702,12 @@ roscpp_generate_messages_py: object_segmentation/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/rule
 
 # Convenience name for target.
@@ -717,12 +717,12 @@ object_segmentation_genlisp: object_segmentation/CMakeFiles/object_segmentation_
 
 # fast build rule for target.
 object_segmentation_genlisp/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_genlisp.dir/build
 .PHONY : object_segmentation_genlisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -732,12 +732,12 @@ object_segmentation_generate_messages_nodejs: object_segmentation/CMakeFiles/obj
 
 # fast build rule for target.
 object_segmentation_generate_messages_nodejs/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build
 .PHONY : object_segmentation_generate_messages_nodejs/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -747,12 +747,12 @@ object_segmentation_generate_messages_py: object_segmentation/CMakeFiles/object_
 
 # fast build rule for target.
 object_segmentation_generate_messages_py/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build
 .PHONY : object_segmentation_generate_messages_py/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/image_receiver.dir/rule:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/image_receiver.dir/rule
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/image_receiver.dir/rule
 .PHONY : object_segmentation/CMakeFiles/image_receiver.dir/rule
 
 # Convenience name for target.
@@ -762,7 +762,7 @@ image_receiver: object_segmentation/CMakeFiles/image_receiver.dir/rule
 
 # fast build rule for target.
 image_receiver/fast:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/build
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/build
 .PHONY : image_receiver/fast
 
 src/object_segmentation.o: src/object_segmentation.cpp.o
@@ -771,7 +771,7 @@ src/object_segmentation.o: src/object_segmentation.cpp.o
 
 # target to build an object file
 src/object_segmentation.cpp.o:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.o
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.o
 .PHONY : src/object_segmentation.cpp.o
 
 src/object_segmentation.i: src/object_segmentation.cpp.i
@@ -780,7 +780,7 @@ src/object_segmentation.i: src/object_segmentation.cpp.i
 
 # target to preprocess a source file
 src/object_segmentation.cpp.i:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.i
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.i
 .PHONY : src/object_segmentation.cpp.i
 
 src/object_segmentation.s: src/object_segmentation.cpp.s
@@ -789,7 +789,7 @@ src/object_segmentation.s: src/object_segmentation.cpp.s
 
 # target to generate assembly for a file
 src/object_segmentation.cpp.s:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.s
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.s
 .PHONY : src/object_segmentation.cpp.s
 
 src/talker.o: src/talker.cpp.o
@@ -798,7 +798,7 @@ src/talker.o: src/talker.cpp.o
 
 # target to build an object file
 src/talker.cpp.o:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/src/talker.cpp.o
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/src/talker.cpp.o
 .PHONY : src/talker.cpp.o
 
 src/talker.i: src/talker.cpp.i
@@ -807,7 +807,7 @@ src/talker.i: src/talker.cpp.i
 
 # target to preprocess a source file
 src/talker.cpp.i:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/src/talker.cpp.i
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/src/talker.cpp.i
 .PHONY : src/talker.cpp.i
 
 src/talker.s: src/talker.cpp.s
@@ -816,7 +816,7 @@ src/talker.s: src/talker.cpp.s
 
 # target to generate assembly for a file
 src/talker.cpp.s:
-	cd /home/ys/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/src/talker.cpp.s
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/src/talker.cpp.s
 .PHONY : src/talker.cpp.s
 
 # Help Target
@@ -889,6 +889,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ys/opencv_ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

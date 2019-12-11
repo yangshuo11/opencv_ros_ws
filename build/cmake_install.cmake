@@ -1,8 +1,8 @@
-# Install script for directory: /home/ys/opencv_ros_ws/src
+# Install script for directory: /home/ys/MyGitRepository/opencv_ros_ws/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ys/opencv_ros_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ys/MyGitRepository/opencv_ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,89 +44,89 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ys/opencv_ros_ws/install/_setup_util.py")
+   "/home/ys/MyGitRepository/opencv_ros_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ys/opencv_ros_ws/install" TYPE PROGRAM FILES "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ys/MyGitRepository/opencv_ros_ws/install" TYPE PROGRAM FILES "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ys/opencv_ros_ws/install/env.sh")
+   "/home/ys/MyGitRepository/opencv_ros_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ys/opencv_ros_ws/install" TYPE PROGRAM FILES "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ys/MyGitRepository/opencv_ros_ws/install" TYPE PROGRAM FILES "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ys/opencv_ros_ws/install/setup.bash;/home/ys/opencv_ros_ws/install/local_setup.bash")
+   "/home/ys/MyGitRepository/opencv_ros_ws/install/setup.bash;/home/ys/MyGitRepository/opencv_ros_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ys/opencv_ros_ws/install" TYPE FILE FILES
-    "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ys/MyGitRepository/opencv_ros_ws/install" TYPE FILE FILES
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ys/opencv_ros_ws/install/setup.sh;/home/ys/opencv_ros_ws/install/local_setup.sh")
+   "/home/ys/MyGitRepository/opencv_ros_ws/install/setup.sh;/home/ys/MyGitRepository/opencv_ros_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ys/opencv_ros_ws/install" TYPE FILE FILES
-    "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ys/MyGitRepository/opencv_ros_ws/install" TYPE FILE FILES
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ys/opencv_ros_ws/install/setup.zsh;/home/ys/opencv_ros_ws/install/local_setup.zsh")
+   "/home/ys/MyGitRepository/opencv_ros_ws/install/setup.zsh;/home/ys/MyGitRepository/opencv_ros_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ys/opencv_ros_ws/install" TYPE FILE FILES
-    "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ys/MyGitRepository/opencv_ros_ws/install" TYPE FILE FILES
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ys/opencv_ros_ws/install/.rosinstall")
+   "/home/ys/MyGitRepository/opencv_ros_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ys/opencv_ros_ws/install" TYPE FILE FILES "/home/ys/opencv_ros_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ys/MyGitRepository/opencv_ros_ws/install" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ys/opencv_ros_ws/build/gtest/cmake_install.cmake")
-  include("/home/ys/opencv_ros_ws/build/object_segmentation/cmake_install.cmake")
+  include("/home/ys/MyGitRepository/opencv_ros_ws/build/gtest/cmake_install.cmake")
+  include("/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/cmake_install.cmake")
 
 endif()
 
@@ -138,5 +138,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ys/opencv_ros_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ys/MyGitRepository/opencv_ros_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

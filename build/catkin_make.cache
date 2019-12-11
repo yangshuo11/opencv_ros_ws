@@ -1,2 +1,2 @@
 object_segmentation
--DCATKIN_DEVEL_PREFIX=/home/ys/opencv_ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ys/opencv_ros_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/ys/MyGitRepository/opencv_ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ys/MyGitRepository/opencv_ros_ws/install -G Unix Makefiles

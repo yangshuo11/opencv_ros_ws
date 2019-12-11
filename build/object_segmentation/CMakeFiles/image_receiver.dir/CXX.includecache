@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ys/opencv_ros_ws/src/object_segmentation/src/object_segmentation.cpp
+/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/object_segmentation.cpp
 ros/ros.h
 -
 iostream
@@ -18,7 +18,7 @@ vector
 string
 -
 std_msgs/String.h
-/home/ys/opencv_ros_ws/src/object_segmentation/src/std_msgs/String.h
+/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/std_msgs/String.h
 sstream
 -
 opencv2/imgproc/imgproc.hpp

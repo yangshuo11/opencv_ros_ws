@@ -2,7 +2,7 @@
 
 message(STATUS "object_segmentation: 1 messages, 1 services")
 
-set(MSG_I_FLAGS "-Iobject_segmentation:/home/ys/opencv_ros_ws/src/object_segmentation/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iobject_segmentation:/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(object_segmentation_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
 add_custom_target(_object_segmentation_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "object_segmentation" "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "object_segmentation" "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" ""
 )
 
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
 add_custom_target(_object_segmentation_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "object_segmentation" "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "object_segmentation" "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" ""
 )
 
 #
@@ -34,7 +34,7 @@ add_custom_target(_object_segmentation_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/object_segmentation
@@ -42,7 +42,7 @@ _generate_msg_cpp(object_segmentation
 
 ### Generating Services
 _generate_srv_cpp(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/object_segmentation
@@ -60,9 +60,9 @@ add_custom_target(object_segmentation_generate_messages_cpp
 add_dependencies(object_segmentation_generate_messages object_segmentation_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_cpp _object_segmentation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_cpp _object_segmentation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,7 +75,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS object_segmentation_generate_messag
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/object_segmentation
@@ -83,7 +83,7 @@ _generate_msg_eus(object_segmentation
 
 ### Generating Services
 _generate_srv_eus(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/object_segmentation
@@ -101,9 +101,9 @@ add_custom_target(object_segmentation_generate_messages_eus
 add_dependencies(object_segmentation_generate_messages object_segmentation_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_eus _object_segmentation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_eus _object_segmentation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,7 +116,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS object_segmentation_generate_messag
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/object_segmentation
@@ -124,7 +124,7 @@ _generate_msg_lisp(object_segmentation
 
 ### Generating Services
 _generate_srv_lisp(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/object_segmentation
@@ -142,9 +142,9 @@ add_custom_target(object_segmentation_generate_messages_lisp
 add_dependencies(object_segmentation_generate_messages object_segmentation_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_lisp _object_segmentation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_lisp _object_segmentation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,7 +157,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS object_segmentation_generate_messag
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/object_segmentation
@@ -165,7 +165,7 @@ _generate_msg_nodejs(object_segmentation
 
 ### Generating Services
 _generate_srv_nodejs(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/object_segmentation
@@ -183,9 +183,9 @@ add_custom_target(object_segmentation_generate_messages_nodejs
 add_dependencies(object_segmentation_generate_messages object_segmentation_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_nodejs _object_segmentation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_nodejs _object_segmentation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,7 +198,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS object_segmentation_generate_messag
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/object_segmentation
@@ -206,7 +206,7 @@ _generate_msg_py(object_segmentation
 
 ### Generating Services
 _generate_srv_py(object_segmentation
-  "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/object_segmentation
@@ -224,9 +224,9 @@ add_custom_target(object_segmentation_generate_messages_py
 add_dependencies(object_segmentation_generate_messages object_segmentation_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_py _object_segmentation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg" NAME_WE)
 add_dependencies(object_segmentation_generate_messages_py _object_segmentation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

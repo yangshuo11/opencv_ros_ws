@@ -43,49 +43,49 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ys/opencv_ros_ws/src
+CMAKE_SOURCE_DIR = /home/ys/MyGitRepository/opencv_ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ys/opencv_ros_ws/build
+CMAKE_BINARY_DIR = /home/ys/MyGitRepository/opencv_ros_ws/build
 
 # Utility rule file for object_segmentation_generate_messages_py.
 
 # Include the progress variables for this target.
 include object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/progress.make
 
-object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
-object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
-object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py
-object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py
+object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
+object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
+object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py
+object_segmentation/CMakeFiles/object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py
 
 
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py: /home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG object_segmentation/Num"
-	cd /home/ys/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg -Iobject_segmentation:/home/ys/opencv_ros_ws/src/object_segmentation/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p object_segmentation -o /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py: /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG object_segmentation/Num"
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg -Iobject_segmentation:/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p object_segmentation -o /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg
 
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py: /home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV object_segmentation/AddTwoInts"
-	cd /home/ys/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv -Iobject_segmentation:/home/ys/opencv_ros_ws/src/object_segmentation/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p object_segmentation -o /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py: /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV object_segmentation/AddTwoInts"
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv -Iobject_segmentation:/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p object_segmentation -o /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv
 
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for object_segmentation"
-	cd /home/ys/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg --initpy
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for object_segmentation"
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg --initpy
 
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
-/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for object_segmentation"
-	cd /home/ys/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv --initpy
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
+/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for object_segmentation"
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv --initpy
 
 object_segmentation_generate_messages_py: object_segmentation/CMakeFiles/object_segmentation_generate_messages_py
-object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
-object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
-object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py
-object_segmentation_generate_messages_py: /home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py
+object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/_Num.py
+object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/_AddTwoInts.py
+object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/msg/__init__.py
+object_segmentation_generate_messages_py: /home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation/srv/__init__.py
 object_segmentation_generate_messages_py: object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build.make
 
 .PHONY : object_segmentation_generate_messages_py
@@ -96,10 +96,10 @@ object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/buil
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build
 
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/clean:
-	cd /home/ys/opencv_ros_ws/build/object_segmentation && $(CMAKE_COMMAND) -P CMakeFiles/object_segmentation_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation && $(CMAKE_COMMAND) -P CMakeFiles/object_segmentation_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/clean
 
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/depend:
-	cd /home/ys/opencv_ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ys/opencv_ros_ws/src /home/ys/opencv_ros_ws/src/object_segmentation /home/ys/opencv_ros_ws/build /home/ys/opencv_ros_ws/build/object_segmentation /home/ys/opencv_ros_ws/build/object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ys/MyGitRepository/opencv_ros_ws/src /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation /home/ys/MyGitRepository/opencv_ros_ws/build /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation /home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/depend
 

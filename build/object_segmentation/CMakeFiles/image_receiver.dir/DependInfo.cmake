@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ys/opencv_ros_ws/src/object_segmentation/src/object_segmentation.cpp" "/home/ys/opencv_ros_ws/build/object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.o"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/object_segmentation.cpp" "/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ys/opencv_ros_ws/devel/include"
-  "/home/ys/opencv_ros_ws/src/object_segmentation/include"
+  "/home/ys/MyGitRepository/opencv_ros_ws/devel/include"
+  "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"

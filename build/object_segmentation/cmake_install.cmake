@@ -1,8 +1,8 @@
-# Install script for directory: /home/ys/opencv_ros_ws/src/object_segmentation
+# Install script for directory: /home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ys/opencv_ros_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ys/MyGitRepository/opencv_ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,57 +33,57 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/msg" TYPE FILE FILES "/home/ys/opencv_ros_ws/src/object_segmentation/msg/Num.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/msg" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/msg/Num.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/srv" TYPE FILE FILES "/home/ys/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/srv" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/srv/AddTwoInts.srv")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/cmake" TYPE FILE FILES "/home/ys/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentation-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/cmake" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentation-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ys/opencv_ros_ws/devel/include/object_segmentation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ys/MyGitRepository/opencv_ros_ws/devel/include/object_segmentation")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ys/opencv_ros_ws/devel/share/roseus/ros/object_segmentation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ys/MyGitRepository/opencv_ros_ws/devel/share/roseus/ros/object_segmentation")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ys/opencv_ros_ws/devel/share/common-lisp/ros/object_segmentation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ys/MyGitRepository/opencv_ros_ws/devel/share/common-lisp/ros/object_segmentation")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ys/opencv_ros_ws/devel/share/gennodejs/ros/object_segmentation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ys/MyGitRepository/opencv_ros_ws/devel/share/gennodejs/ros/object_segmentation")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ys/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/python2.7/dist-packages/object_segmentation")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ys/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentation.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/cmake" TYPE FILE FILES "/home/ys/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentation-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/cmake" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentation-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation/cmake" TYPE FILE FILES
-    "/home/ys/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentationConfig.cmake"
-    "/home/ys/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentationConfig-version.cmake"
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentationConfig.cmake"
+    "/home/ys/MyGitRepository/opencv_ros_ws/build/object_segmentation/catkin_generated/installspace/object_segmentationConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation" TYPE FILE FILES "/home/ys/opencv_ros_ws/src/object_segmentation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_segmentation" TYPE FILE FILES "/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/package.xml")
 endif()
 

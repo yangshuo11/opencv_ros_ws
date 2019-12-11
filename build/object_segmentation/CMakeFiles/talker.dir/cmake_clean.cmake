@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/talker.dir/src/talker.cpp.o"
-  "/home/ys/opencv_ros_ws/devel/lib/object_segmentation/talker.pdb"
-  "/home/ys/opencv_ros_ws/devel/lib/object_segmentation/talker"
+  "/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/object_segmentation/talker.pdb"
+  "/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/object_segmentation/talker"
 )
 
 # Per-language clean rules from dependency scanning.

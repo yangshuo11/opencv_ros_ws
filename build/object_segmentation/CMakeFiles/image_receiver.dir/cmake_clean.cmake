@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/image_receiver.dir/src/object_segmentation.cpp.o"
-  "/home/ys/opencv_ros_ws/devel/lib/object_segmentation/image_receiver.pdb"
-  "/home/ys/opencv_ros_ws/devel/lib/object_segmentation/image_receiver"
+  "/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/object_segmentation/image_receiver.pdb"
+  "/home/ys/MyGitRepository/opencv_ros_ws/devel/lib/object_segmentation/image_receiver"
 )
 
 # Per-language clean rules from dependency scanning.
