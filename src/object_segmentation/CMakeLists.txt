@@ -48,6 +48,14 @@ add_executable(image_receiver src/object_segmentation.cpp)
 target_link_libraries(image_receiver ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 add_dependencies(image_receiver object_segmentation_generate_message_cpp)
 
+add_executable(client1 src/client1.cpp)
+target_link_libraries(client1 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(client1 object_segmentation_generate_message_cpp)
+
+add_executable(client2 src/client2.cpp)
+target_link_libraries(client2 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(client2 object_segmentation_generate_message_cpp)
+
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}

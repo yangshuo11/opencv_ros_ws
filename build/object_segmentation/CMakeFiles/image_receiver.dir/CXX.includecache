@@ -33,6 +33,26 @@ cv_bridge/cv_bridge.h
 -
 opencv2/opencv.hpp
 -
+stdio.h
+-
+string.h
+-
+string
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+fstream
+-
+iostream
+-
+iomanip
+-
+vector
+-
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

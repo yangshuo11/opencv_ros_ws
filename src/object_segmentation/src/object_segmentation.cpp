@@ -13,8 +13,63 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 
+// socket
+
+#include<stdio.h> 
+#include<string.h>    
+#include<string>  
+#include<sys/socket.h>    
+#include<arpa/inet.h> 
+#include<netdb.h>
+#include <fstream>
+#include <iostream>
+#include <iomanip>
+#include <vector> 
+
 using namespace std;
 using namespace cv;
+
+int main(int argc, char *argv[]) {
+	int socket_desc;
+	char sorted[2000];
+
+	socket_desc = socket(AF_INET, SOCK_STREAM, 0);
+	if (socket_desc == -1) {
+		printf("Could not create socket");
+	}
+
+	struct sockaddr_in server;
+
+	server.sin_addr.s_addr = inet_addr("127.0.0.1");
+	server.sin_family = AF_INET;
+	server.sin_port = htons(8989);
+	if (connect(socket_desc, (struct sockaddr*)&server, sizeof(server)) < 0) {
+		cout << "connect error";
+		return 1;
+	}
+	cout << "Connected" << endl;
+    int count = 0;
+    char buf[1024];
+    strcpy(buf, "received image");
+    int n = strlen(buf);
+    while(count == 0) {
+        if( send(socket_desc , buf , n, 0) < 0) {
+        	perror("Send failed : ");
+        	return false;
+        }
+        cout<<"Data send\n";
+        n =recv( socket_desc ,buf, sizeof(buf) , 0);
+        buf[n] = 0;
+        printf("Got: %s \n", buf);
+        count = count + 1;
+    }
+    return 0;
+}
+
+
+
+
+
 
 typedef struct color 
 {
@@ -58,9 +113,9 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg) {
 		Mat gs_frame;
 		Mat hsv;
 		Mat mask;
+		Mat erode_mask;
+		Mat dilate_mask;
 		vector<vector<Point> > contours;
-		vector<RotatedRect> minRect(contours.size());
-  		vector<RotatedRect> minEllipse(contours.size());
 		vector<Vec4i> hierarchy;
 		cv_bridge::CvImagePtr cv_ptr;
 
@@ -73,24 +128,33 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg) {
 		cout << "img_h = " << img_h << "; img_w = " << img_w << endl;
 		int img_center_x = img_h/2;
 		int img_center_y = img_w/2;
-		cv::GaussianBlur(orgFrame, gs_frame, cv::Size(5,5), 0);
-		cv::cvtColor(gs_frame, hsv, cv::COLOR_BGR2HSV);
+		cv::GaussianBlur(orgFrame, gs_frame, cv::Size(5,5), 0.0, 0.0); //(src, dst,cv::Size(ksize1,ksize2), sigma1, sigma2)
+		// imshow("gs", gs_frame);
+		cv::cvtColor(gs_frame, hsv, cv::COLOR_BGR2HSV); // cvtColor(InputArray src, OutputArray dst, int code, int dstCn=0 )
 		for (vector<Color>::const_iterator iter = color_dist.begin(); iter != color_dist.end(); ++iter) {
 			cv::inRange(gs_frame, Scalar(iter->hl, iter->sl, iter->vl), Scalar(iter->hh, iter->sh, iter->vh), mask);
-			cv::erode(mask, mask, NULL);
-			cv::dilate(mask, mask, cv::Mat());
-			cv::findContours(mask, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE, Point());
+			imshow("mask", mask);
+			Mat element = getStructuringElement(MORPH_RECT, Size(3,3));
+			cv::erode(mask, erode_mask, element);
+			imshow("erode", erode_mask);
+			cv::dilate(erode_mask, dilate_mask, cv::Mat());
+			imshow("dilate", dilate_mask);
+			cv::findContours(dilate_mask, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE, Point());
+			// vector<RotatedRect> minRect(contours.size());
+  	// 		vector<RotatedRect> minEllipse(contours.size());
 			if (contours.size() > 0) {
 				for (int i=0; i < contours.size(); i++) {
-					minRect[i] = minAreaRect(Mat(contours[i]));
+					RotatedRect rect = minAreaRect(Mat(contours[i]));
+					cv::drawContours(orgFrame, Mat(contours[i]), -1, Scalar(255, 0, 255));
+					// Point2f P[4];
+					// rect.points(P);
+					// for(int j = 0; j <= 3; j++) {
+					// 	line(orgFrame, P[j], P[(j+1)%4], cv::Scalar(255), 2);
 
+					// }
+					imshow("rect", orgFrame);
 				}
-
 			}
-
-
-
-
 		}
 
 
@@ -121,15 +185,15 @@ void chatterCallback(const sensor_msgs::ImageConstPtr& msg) {
 	}
 }
 
-int main(int argc, char **argv) {
-	ros::init(argc, argv, "listener");
-	ros::NodeHandle n;
-	cv::namedWindow("view",CV_WINDOW_NORMAL);
-  	cv::startWindowThread();
-  	image_transport::ImageTransport it(n);
-  	image_transport::Subscriber sub = it.subscribe("/camera/rgb/image_raw", 1, chatterCallback);
-	// ros::Subscriber sub = n.subscribe("/camera/rgb/image_raw", 1000, chatterCallback);
-	ros::spin();
-	cv::destroyWindow("view");
-	return 0;
-}
+// int main(int argc, char **argv) {
+// 	ros::init(argc, argv, "listener");
+// 	ros::NodeHandle n;
+// 	cv::namedWindow("view",CV_WINDOW_NORMAL);
+//   	cv::startWindowThread();
+//   	image_transport::ImageTransport it(n);
+//   	image_transport::Subscriber sub = it.subscribe("/camera/rgb/image_raw", 1, chatterCallback);
+// 	// ros::Subscriber sub = n.subscribe("/camera/rgb/image_raw", 1000, chatterCallback);
+// 	ros::spin();
+// 	cv::destroyWindow("view");
+// 	return 0;
+// }

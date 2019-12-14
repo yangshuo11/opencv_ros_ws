@@ -3,6 +3,7 @@ import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
 import numpy as np
+import random
 
 import sys
 # sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
@@ -22,6 +23,15 @@ from cv_bridge import CvBridge, CvBridgeError
 # box3-left <{R:0.84, G:0.21, B:0.42} -> (170.0, 191.25, 214.2)
 # box3-right <{R:0.41, G:0.64, B:1.00}> -> (108.30508474576271, 150.45000000000002, 255.0)
 
+def random_pick(some_list,probabilities):
+    x = random.uniform(0,1)
+    cumulative_probability=0.0
+    for item,item_probability in zip(some_list,probabilities):
+        cumulative_probability+=item_probability
+        if x < cumulative_probability:
+            break
+    return item
+
 
 def callback(data):
 
@@ -30,16 +40,21 @@ def callback(data):
     #           'green': {'Lower': np.array([35, 43, 35]), 'Upper': np.array([90, 255, 255])},
     #           }
 
-    color_dist = {'ml00': {'Lower': np.array([110, 43, 46]), 'Upper': np.array([120, 255, 255])}, # deep blue
-                  'ml01': {'Lower': np.array([25, 43, 46]), 'Upper': np.array([35, 255, 255])}, # yellow
-                  'ml10': {'Lower': np.array([85, 43, 46]), 'Upper': np.array([95, 255, 255])}, # light blue
-                  'ml11': {'Lower': np.array([100, 43, 46]), 'Upper': np.array([104, 255, 255])}, # gray
-                  'mh00': {'Lower': np.array([40, 43, 46]), 'Upper': np.array([50, 255, 255])}, # green
-                  'box1': {'Lower': np.array([5, 43, 46]), 'Upper': np.array([15, 255, 255])}, # orange
-                  'box2': {'Lower': np.array([135, 43, 46]), 'Upper': np.array([145, 255, 255])}, # pink
-                  'box3': {'Lower': np.array([105, 43, 46]), 'Upper': np.array([108, 255, 255])}, # sky
-                  'red': {'Lower': np.array([165, 43, 46]), 'Upper': np.array([175, 255, 255])}, # red
-                }          
+    # color_dist = {'ml00': {'Lower': np.array([110, 43, 46]), 'Upper': np.array([120, 255, 255])}, # deep blue
+    #               'ml01': {'Lower': np.array([25, 43, 46]), 'Upper': np.array([35, 255, 255])}, # yellow
+    #               'ml10': {'Lower': np.array([85, 43, 46]), 'Upper': np.array([95, 255, 255])}, # light blue
+    #               'ml11': {'Lower': np.array([100, 43, 46]), 'Upper': np.array([104, 255, 255])}, # gray
+    #               'mh00': {'Lower': np.array([40, 43, 46]), 'Upper': np.array([50, 255, 255])}, # green
+    #               'box1': {'Lower': np.array([5, 43, 46]), 'Upper': np.array([15, 255, 255])}, # orange
+    #               'box2': {'Lower': np.array([135, 43, 46]), 'Upper': np.array([145, 255, 255])}, # pink
+    #               'box3': {'Lower': np.array([105, 43, 46]), 'Upper': np.array([108, 255, 255])}, # sky
+    #               'red': {'Lower': np.array([165, 43, 46]), 'Upper': np.array([175, 255, 255])}, # red
+    #             }
+
+    color_dist = {'orange': {'Lower': np.array([5, 43, 46]), 'Upper': np.array([15, 255, 255])}, # orange
+                  'pink': {'Lower': np.array([135, 43, 46]), 'Upper': np.array([145, 255, 255])}, 
+                  'blue': {'Lower': np.array([105, 43, 46]), 'Upper': np.array([108, 255, 255])}, # sky
+                }                         
 
     position_color_list = []
     cv_blocks_ok = False
@@ -48,6 +63,8 @@ def callback(data):
     last_x = 0
     stable = False
     storage_blocks = []
+    block_areas = []
+
 
     # rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
     scaling_factor = 0.5
@@ -62,17 +79,19 @@ def callback(data):
         img_h, img_w = orgFrame.shape[:2]
         img_center_x = img_w / 2
         img_center_y = img_h / 2
-        print(int(img_h))
-        print(int(img_w))
+        # print(int(img_h))
+        # print(int(img_w))
         if cv_blocks_ok is False:
-            gs_frame = cv2.GaussianBlur(orgFrame, (5, 5), 0)
-            hsv = cv2.cvtColor(gs_frame, cv2.COLOR_BGR2HSV)
+            gs_frame = cv2.GaussianBlur(orgFrame, (5, 5), 0)#GaussianBlur(src,ksize,sigmaX,dst=None,sigmaY=None,borderType=None)
+            hsv = cv2.cvtColor(gs_frame, cv2.COLOR_BGR2HSV)#cv2.cvtColor(src,code[,dst[,dstCn]])
             for i in color_dist:
                 mask = cv2.inRange(hsv, color_dist[i]['Lower'], color_dist[i]['Upper'])
+                # cv2.imshow("mask",mask)
                 mask = cv2.erode(mask, None, iterations=2)
+                # cv2.imshow("erode", mask)
                 kernel = np.ones((5, 5), np.uint8)
                 mask = cv2.dilate(mask, kernel, iterations=2)
-                # cv2.imshow('mask', mask)
+                # cv2.imshow('dilate', mask)
                 cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[-2]
 
                 if len(cnts) > 0:
@@ -83,40 +102,57 @@ def callback(data):
                         area_j = cv2.contourArea(j)
                         j_x, j_y = rect_j[0]
                         res = str(i) + ": area = " + str(int(area_j)) + "; positon = (" + str(int(j_x)) + "," + str(int(j_y)) + ")"
-                        print(res)
+                        # print(res)
+                        block_areas.append([i, int(area_j), int(j_x), int(j_y)])
 
-                    print("-----------------------------")
-                    c = max(cnts, key=cv2.contourArea)
-                    rect = cv2.minAreaRect(c)
-                    box = cv2.boxPoints(rect)
-                    # cv2.drawContours(orgFrame, [np.int0(box)], -1, (0, 255, 255), 2)
-                    c_x, c_y = rect[0]
-                    h, w = rect[1]
-                    c_angle = rect[2]
-                    if h * w >= 1350:
-                        cv2.circle(orgFrame, (int(c_x), int(c_y)), 3, (216, 0, 255), -1)
-                        cv2.putText(orgFrame, "(" + str(int(c_x)) + ", " + str(int(c_y)) + ")",(int(c_x), int(c_y)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 0, 255), 2)
-                        last_blocks.append([int(c_x), i])
-                        if stable:
-                            storage_blocks.append((int(c_y), int(c_x), i, int(c_angle)))
 
-            stable = False
-            if len(last_blocks) > 0:
-                if -10 <= int(last_blocks[len(last_blocks)-1][0] - last_x) <= 10:
-                    print(cv_count)
-                    cv_count += 1
-                else:
-                    cv_count = 0
-                last_x = int(last_blocks[len(last_blocks) - 1][0])
-                last_blocks = []
-                if cv_count >= 5:
-                    cv_count = 0
-                    stable = True
+        box1_type_recog = False
+        box2_type_recog = False
+        box3_type_recog = False
+        box1_type = box2_type = box3_type = 0
 
-                if len(storage_blocks) > 0:
-                    max_y = storage_blocks.index(max(storage_blocks)) 
-                    position_color_list.append((storage_blocks[max_y][2], storage_blocks[max_y][1], storage_blocks[max_y][0], storage_blocks[max_y][3]))
-                    storage_blocks = []
+        for item in block_areas:
+            if 185 < item[2] < 190: # box1_position(189,115)
+                box1_type_recog = True
+                box1_type = item[0]
+            if 108 < item[2] < 113: # box2_position(110,114)
+                box2_type_recog = True
+                box2_type = item[0]
+            if 215 < item[2] < 220: # box3_position(218,114)
+                box3_type_recog = True
+                box3_type = item[0]
+
+        if box1_type_recog == False:
+            # print(random_pick(['pink','orange','blue'],[0.33333,0.33334,0.33333]))
+            box1_type = random_pick(['pink','orange','blue'],[0.33333,0.33334,0.33333])
+            # print("box1_type = " + box1_type)
+        if box2_type_recog == False:
+            # print(np.random.choice(['pink','orange','blue'], p = p.ravel()))
+            box2_type = random_pick(['pink','orange','blue'],[0.33333,0.33334,0.33333])
+            # print("box2_type = " + box2_type)
+        if box3_type_recog == False:
+            # print(np.random.choice(['pink','orange','blue'], p = p.ravel()))
+            box3_type = random_pick(['pink','orange','blue'],[0.33333,0.33334,0.33333])
+            # print("box3_type = " + box3_type)
+        object_types = []
+        object_types.append(box1_type)
+        object_types.append(box2_type)
+        object_types.append(box3_type)
+        print(object_types)
+
+
+                    # print("-----------------------------")
+                    # c = max(cnts, key=cv2.contourArea)
+                    # rect = cv2.minAreaRect(c)
+                    # box = cv2.boxPoints(rect)
+                    # # cv2.drawContours(orgFrame, [np.int0(box)], -1, (0, 255, 255), 2)
+                    # c_x, c_y = rect[0]
+                    # h, w = rect[1]
+                    # c_angle = rect[2]
+                    # # if h * w >= 1350:
+                    # cv2.circle(orgFrame, (int(c_x), int(c_y)), 3, (216, 0, 255), -1)
+                    # cv2.putText(orgFrame, "(" + str(int(c_x)) + ", " + str(int(c_y)) + ")",(int(c_x), int(c_y)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 0, 255), 2)
+
         cv2.line(orgFrame, (int(img_w / 2) - 20, int(img_h / 2)), (int(img_w / 2) + 20, int(img_h / 2)), (0, 0, 255), 1)
         cv2.line(orgFrame, (int(img_w / 2), int(img_h / 2) - 20), (int(img_w / 2), int(img_h / 2) + 20), (0, 0, 255), 1)
         t2 = cv2.getTickCount()
@@ -128,7 +164,8 @@ def callback(data):
         cv2.waitKey(3)
     else:
         pass
-   
+
+
 
 def talker():
     pub = rospy.Publisher('chatter', String, queue_size=10)

@@ -322,6 +322,19 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -634,19 +647,6 @@ _object_segmentation_generate_messages_check_deps_AddTwoInts/fast:
 .PHONY : _object_segmentation_generate_messages_check_deps_AddTwoInts/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
 # Target rules for targets named object_segmentation_gennodejs
 
 # Build rule for target.
@@ -802,6 +802,32 @@ image_receiver/fast:
 	$(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/build
 .PHONY : image_receiver/fast
 
+#=============================================================================
+# Target rules for targets named client1
+
+# Build rule for target.
+client1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client1
+.PHONY : client1
+
+# fast build rule for target.
+client1/fast:
+	$(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/build
+.PHONY : client1/fast
+
+#=============================================================================
+# Target rules for targets named client2
+
+# Build rule for target.
+client2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client2
+.PHONY : client2
+
+# fast build rule for target.
+client2/fast:
+	$(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/build
+.PHONY : client2/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -827,6 +853,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... object_segmentation_generate_messages"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -851,7 +878,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... _object_segmentation_generate_messages_check_deps_AddTwoInts"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... object_segmentation_gennodejs"
 	@echo "... _object_segmentation_generate_messages_check_deps_Num"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -864,6 +890,8 @@ help:
 	@echo "... object_segmentation_generate_messages_nodejs"
 	@echo "... object_segmentation_generate_messages_py"
 	@echo "... image_receiver"
+	@echo "... client1"
+	@echo "... client2"
 .PHONY : help
 
 

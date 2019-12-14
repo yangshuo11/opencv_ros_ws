@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ys/MyGitRepository/opencv_ros_ws/src/object_segmentation/src/client1.cpp
+stdio.h
+-
+string.h
+-
+string
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+fstream
+-
+iostream
+-
+iomanip
+-
+vector
+-
+

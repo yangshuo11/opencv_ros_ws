@@ -246,7 +246,7 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=1,2,3 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=5,6,7 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -278,7 +278,7 @@ clean: gtest/CMakeFiles/gmock.dir/clean
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=4,5,6,7 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=8,9,10,11 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -329,7 +329,7 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=8,9 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=12,13 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -361,7 +361,7 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=10,11 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -393,6 +393,8 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 object_segmentation/all: object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/all
 object_segmentation/all: object_segmentation/CMakeFiles/talker.dir/all
 object_segmentation/all: object_segmentation/CMakeFiles/image_receiver.dir/all
+object_segmentation/all: object_segmentation/CMakeFiles/client1.dir/all
+object_segmentation/all: object_segmentation/CMakeFiles/client2.dir/all
 
 .PHONY : object_segmentation/all
 
@@ -400,6 +402,7 @@ object_segmentation/all: object_segmentation/CMakeFiles/image_receiver.dir/all
 object_segmentation/clean: object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/object_segmentation_generate_messages.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+object_segmentation/clean: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
@@ -424,7 +427,6 @@ object_segmentation/clean: object_segmentation/CMakeFiles/std_msgs_generate_mess
 object_segmentation/clean: object_segmentation/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/clean
-object_segmentation/clean: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
@@ -437,6 +439,8 @@ object_segmentation/clean: object_segmentation/CMakeFiles/object_segmentation_ge
 object_segmentation/clean: object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/clean
 object_segmentation/clean: object_segmentation/CMakeFiles/image_receiver.dir/clean
+object_segmentation/clean: object_segmentation/CMakeFiles/client1.dir/clean
+object_segmentation/clean: object_segmentation/CMakeFiles/client2.dir/clean
 
 .PHONY : object_segmentation/clean
 
@@ -547,6 +551,38 @@ object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
+.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
@@ -1035,12 +1071,12 @@ clean: object_segmentation/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # All Build rule for target.
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/all: object_segmentation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/all
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/all: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_AddTwoInts.dir/all
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=19,20 "Built target object_segmentation_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=23,24 "Built target object_segmentation_generate_messages_lisp"
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1168,7 +1204,7 @@ clean: object_segmentation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/c
 object_segmentation/CMakeFiles/talker.dir/all:
 	$(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/talker.dir/build.make object_segmentation/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=27,28 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=31,32 "Built target talker"
 .PHONY : object_segmentation/CMakeFiles/talker.dir/all
 
 # Include target in all.
@@ -1327,38 +1363,6 @@ clean: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_che
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
-.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir
 
 # All Build rule for target.
@@ -1464,7 +1468,7 @@ object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/all
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=14,15 "Built target object_segmentation_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=18,19 "Built target object_segmentation_generate_messages_cpp"
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1531,7 +1535,7 @@ object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/all
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=16,17,18 "Built target object_segmentation_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=20,21,22 "Built target object_segmentation_generate_messages_eus"
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1662,7 +1666,7 @@ object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=21,22 "Built target object_segmentation_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=25,26 "Built target object_segmentation_generate_messages_nodejs"
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1697,7 +1701,7 @@ object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/all:
 object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/all: object_segmentation/CMakeFiles/_object_segmentation_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build.make object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=23,24,25,26 "Built target object_segmentation_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=27,28,29,30 "Built target object_segmentation_generate_messages_py"
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1729,7 +1733,7 @@ clean: object_segmentation/CMakeFiles/object_segmentation_generate_messages_py.d
 object_segmentation/CMakeFiles/image_receiver.dir/all:
 	$(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/depend
 	$(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=12,13 "Built target image_receiver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=16,17 "Built target image_receiver"
 .PHONY : object_segmentation/CMakeFiles/image_receiver.dir/all
 
 # Include target in all.
@@ -1756,6 +1760,80 @@ object_segmentation/CMakeFiles/image_receiver.dir/clean:
 
 # clean rule for target.
 clean: object_segmentation/CMakeFiles/image_receiver.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target object_segmentation/CMakeFiles/client1.dir
+
+# All Build rule for target.
+object_segmentation/CMakeFiles/client1.dir/all:
+	$(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/depend
+	$(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=1,2 "Built target client1"
+.PHONY : object_segmentation/CMakeFiles/client1.dir/all
+
+# Include target in all.
+all: object_segmentation/CMakeFiles/client1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+object_segmentation/CMakeFiles/client1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/client1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
+.PHONY : object_segmentation/CMakeFiles/client1.dir/rule
+
+# Convenience name for target.
+client1: object_segmentation/CMakeFiles/client1.dir/rule
+
+.PHONY : client1
+
+# clean rule for target.
+object_segmentation/CMakeFiles/client1.dir/clean:
+	$(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/clean
+.PHONY : object_segmentation/CMakeFiles/client1.dir/clean
+
+# clean rule for target.
+clean: object_segmentation/CMakeFiles/client1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target object_segmentation/CMakeFiles/client2.dir
+
+# All Build rule for target.
+object_segmentation/CMakeFiles/client2.dir/all:
+	$(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/depend
+	$(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles --progress-num=3,4 "Built target client2"
+.PHONY : object_segmentation/CMakeFiles/client2.dir/all
+
+# Include target in all.
+all: object_segmentation/CMakeFiles/client2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+object_segmentation/CMakeFiles/client2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/client2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ys/MyGitRepository/opencv_ros_ws/build/CMakeFiles 0
+.PHONY : object_segmentation/CMakeFiles/client2.dir/rule
+
+# Convenience name for target.
+client2: object_segmentation/CMakeFiles/client2.dir/rule
+
+.PHONY : client2
+
+# clean rule for target.
+object_segmentation/CMakeFiles/client2.dir/clean:
+	$(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/clean
+.PHONY : object_segmentation/CMakeFiles/client2.dir/clean
+
+# clean rule for target.
+clean: object_segmentation/CMakeFiles/client2.dir/clean
 
 .PHONY : clean
 

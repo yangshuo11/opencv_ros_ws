@@ -56,15 +56,16 @@ CMAKE_BINARY_DIR = /home/ys/MyGitRepository/opencv_ros_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : list_install_components/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -77,6 +78,16 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target test
 test:
@@ -121,17 +132,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -209,6 +209,21 @@ sensor_msgs_generate_messages_cpp: object_segmentation/CMakeFiles/sensor_msgs_ge
 sensor_msgs_generate_messages_cpp/fast:
 	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make object_segmentation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_segmentation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
@@ -571,21 +586,6 @@ _object_segmentation_generate_messages_check_deps_AddTwoInts/fast:
 .PHONY : _object_segmentation_generate_messages_check_deps_AddTwoInts/fast
 
 # Convenience name for target.
-object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make object_segmentation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule:
 	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule
 .PHONY : object_segmentation/CMakeFiles/object_segmentation_gennodejs.dir/rule
@@ -765,6 +765,90 @@ image_receiver/fast:
 	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/image_receiver.dir/build.make object_segmentation/CMakeFiles/image_receiver.dir/build
 .PHONY : image_receiver/fast
 
+# Convenience name for target.
+object_segmentation/CMakeFiles/client1.dir/rule:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/client1.dir/rule
+.PHONY : object_segmentation/CMakeFiles/client1.dir/rule
+
+# Convenience name for target.
+client1: object_segmentation/CMakeFiles/client1.dir/rule
+
+.PHONY : client1
+
+# fast build rule for target.
+client1/fast:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/build
+.PHONY : client1/fast
+
+# Convenience name for target.
+object_segmentation/CMakeFiles/client2.dir/rule:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 object_segmentation/CMakeFiles/client2.dir/rule
+.PHONY : object_segmentation/CMakeFiles/client2.dir/rule
+
+# Convenience name for target.
+client2: object_segmentation/CMakeFiles/client2.dir/rule
+
+.PHONY : client2
+
+# fast build rule for target.
+client2/fast:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/build
+.PHONY : client2/fast
+
+src/client1.o: src/client1.cpp.o
+
+.PHONY : src/client1.o
+
+# target to build an object file
+src/client1.cpp.o:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/src/client1.cpp.o
+.PHONY : src/client1.cpp.o
+
+src/client1.i: src/client1.cpp.i
+
+.PHONY : src/client1.i
+
+# target to preprocess a source file
+src/client1.cpp.i:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/src/client1.cpp.i
+.PHONY : src/client1.cpp.i
+
+src/client1.s: src/client1.cpp.s
+
+.PHONY : src/client1.s
+
+# target to generate assembly for a file
+src/client1.cpp.s:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client1.dir/build.make object_segmentation/CMakeFiles/client1.dir/src/client1.cpp.s
+.PHONY : src/client1.cpp.s
+
+src/client2.o: src/client2.cpp.o
+
+.PHONY : src/client2.o
+
+# target to build an object file
+src/client2.cpp.o:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/src/client2.cpp.o
+.PHONY : src/client2.cpp.o
+
+src/client2.i: src/client2.cpp.i
+
+.PHONY : src/client2.i
+
+# target to preprocess a source file
+src/client2.cpp.i:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/src/client2.cpp.i
+.PHONY : src/client2.cpp.i
+
+src/client2.s: src/client2.cpp.s
+
+.PHONY : src/client2.s
+
+# target to generate assembly for a file
+src/client2.cpp.s:
+	cd /home/ys/MyGitRepository/opencv_ros_ws/build && $(MAKE) -f object_segmentation/CMakeFiles/client2.dir/build.make object_segmentation/CMakeFiles/client2.dir/src/client2.cpp.s
+.PHONY : src/client2.cpp.s
+
 src/object_segmentation.o: src/object_segmentation.cpp.o
 
 .PHONY : src/object_segmentation.o
@@ -825,9 +909,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... object_segmentation_generate_messages"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... install"
+	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -853,8 +940,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... _object_segmentation_generate_messages_check_deps_AddTwoInts"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... install"
 	@echo "... object_segmentation_gennodejs"
 	@echo "... _object_segmentation_generate_messages_check_deps_Num"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -868,10 +953,17 @@ help:
 	@echo "... object_segmentation_generate_messages_nodejs"
 	@echo "... object_segmentation_generate_messages_py"
 	@echo "... image_receiver"
+	@echo "... client1"
 	@echo "... install/strip"
+	@echo "... client2"
 	@echo "... install/local"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
+	@echo "... src/client1.o"
+	@echo "... src/client1.i"
+	@echo "... src/client1.s"
+	@echo "... src/client2.o"
+	@echo "... src/client2.i"
+	@echo "... src/client2.s"
 	@echo "... src/object_segmentation.o"
 	@echo "... src/object_segmentation.i"
 	@echo "... src/object_segmentation.s"
